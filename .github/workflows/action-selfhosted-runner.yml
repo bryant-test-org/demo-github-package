@@ -8,11 +8,11 @@ on:
         required: true
         default: 'yes'
         
- jobs:
-   some-job:
-     steps:
-       - name: Test
-         runs-on: self-hosted
-         run: |
-           echo "Hello, $JAVA_HOME"
+jobs:
+ some-job:
+   runs-on: self-hosted
+   steps:
+     - name: Test
+       run: |
+         echo "Hello, $JAVA_HOME"
    
