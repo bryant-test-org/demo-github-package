@@ -10,7 +10,9 @@ on:
         
  jobs:
    some-job:
-     runs-on: self-hosted
-     run: |
-       echo "Hello, $JAVA_HOME"
+     steps:
+       - name: Test
+         runs-on: self-hosted
+         run: |
+           echo "Hello, $JAVA_HOME"
    
