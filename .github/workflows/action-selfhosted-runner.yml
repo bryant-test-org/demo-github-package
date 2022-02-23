@@ -1,0 +1,16 @@
+name: Self hosted runner test
+
+on:
+  workflow_dispatch:
+    inputs:
+      test:
+        description: Do you want to run?
+        required: true
+        default: 'yes'
+        
+ jobs:
+   some-job:
+     runs-on: self-hosted
+     run: |
+       echo "Hello, $JAVA_HOME"
+   
