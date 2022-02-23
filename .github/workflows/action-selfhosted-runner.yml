@@ -14,5 +14,5 @@ jobs:
    steps:
      - name: Test
        run: |
-         echo "Hello, $JAVA_HOME"
+         echo "Hello, $MVN_HOME, $USER_HOME"
    
