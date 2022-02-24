@@ -14,5 +14,6 @@ jobs:
    steps:
      - name: Test
        run: |
-         echo "Hello, MAVNE HOME: $MVN_HOME, HELLO HOME: $HELLO_HOME"
+         echo "Hello, MAVNE HOME: $MVN_HOME, HELLO HOME: $HELLO_HOME Terraform Home: $TERRAFORM_HOME"
+         printenv
    
